@@ -7,17 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Set up Git repository
         uses: actions/checkout@v2
-
-      - name: Set up LaTeX
-        run: sudo apt-get install texlive-xetex
-
       - name: Compile LaTeX document
         uses: dante-ev/latex-action@latest
         with:
           root_file: book.tex
-
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
