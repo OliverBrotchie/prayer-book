@@ -23,7 +23,7 @@ To compile the prayer book:
 1. Install LaTeX.
 2. Clone this repository:
    ```sh
-   git clone https://github.com/OliverBrotchie/prayer-book
+   git clone https://github.com/Orthodox-Computing-Fellowship/prayer-book
    cd prayer-book
    ```
 3. Compile the document using `pdflatex`:
@@ -31,6 +31,8 @@ To compile the prayer book:
    pdflatex -halt-on-error book.tex
    ```
    Alternatively, you can use an editor like Overleaf, TeXworks, or TeXShop.
+
+You can see a PDF of latest version [here](https://github.com/Orthodox-Computing-Fellowship/prayer-book/releases).
 
 ## Installing LaTeX 💡
 
