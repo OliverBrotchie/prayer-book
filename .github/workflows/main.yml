@@ -13,8 +13,10 @@ jobs:
       - name: Set up LaTeX
         run: sudo apt-get install texlive-xetex
 
-      - name: Compile LaTeX to PDF
-        run: pdflatex book.tex
+      - name: Compile LaTeX document
+        uses: dante-ev/latex-action@latest
+        with:
+          root_file: book.tex
 
       - name: Create Release
         id: create_release
