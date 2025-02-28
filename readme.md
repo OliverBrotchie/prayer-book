@@ -12,6 +12,10 @@
 - `sections` Contains the different services included in the book.
 - `commands/prayers.tex` Contains prayers that are commonly repeated or used in more than one service.
 
+## How to Edit 🖊️
+
+You can edit files using the [online Gitub editor](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files), or to edit them locally, clone the repository, make the changes that you want with a text editor such as [VS Code](https://code.visualstudio.com/) and [sync the changes to GitHub using Git](https://www.youtube.com/watch?v=hwP7WQkmECE).
+
 ## How to Compile 💻
 
 To compile the prayer book:
