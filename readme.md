@@ -30,11 +30,11 @@ To compile the prayer book, follow these steps:
 
 ## Installing LaTeX 💡
 
-To use this project, you need to [https://www.latex-project.org/get/](install a LaTeX distribution).
+To use this project, you need to [install a LaTeX distribution](https://www.latex-project.org/get/).
 
 ## Learning LaTeX 📖
 
 If you're new to LaTeX, here are some great resources to get started:
 
-- [https://www.overleaf.com/learn/latex/Learn\_LaTeX\_in\_30\_minutes](Overleaf's Introduction to LaTeX)
-- [https://en.wikibooks.org/wiki/LaTeX](LaTeX Wikibook)
+- [Overleaf's Introduction to LaTeX](https://www.overleaf.com/learn/latex/Learn\_LaTeX\_in\_30\_minutes)
+- [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX)
