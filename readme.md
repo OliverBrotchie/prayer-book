@@ -7,8 +7,6 @@ This repository contains the LaTeX source code for the new edition of Holy Archd
 
 </div>
 
- The transaltions used are primarly sourced from the late Fr Ephrem Lash.
-
 ## Project Structure 📋
 
 - `book.tex` The main LaTeX file that compiles the prayer book.
