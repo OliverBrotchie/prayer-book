@@ -1,21 +1,46 @@
-\documentclass[9pt]{extarticle}
+\documentclass[8pt]{extarticle}
 
 \usepackage[utf8]{inputenc}
-\usepackage[paperwidth=105mm, paperheight=148mm, margin=10mm]{geometry} 
+\usepackage{marvosym}
+\usepackage[paperwidth=105mm, paperheight=148mm, top=12mm, bottom=20mm]{geometry}
 \usepackage{ifthen}
 \usepackage{xifthen}
 \usepackage{xcolor}
 \usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{graphicx}
 
 \title{Prayer Book}
-\author{The Holy Archdiocese of Thyateira and Great Britan.}
+\author{The Archdiocese of Thyateira and Great Britan.}
 
 \linespread{1.2}%
 \setlength{\parindent}{0pt}%
 
-%\titlespacing{\section}{0pt}{\parskip}{-\parskip}%
+\titleformat{\section}
+  {\center\Large\bfseries\uppercase} % Large, bold, and uppercase
+  {} % No numbering
+  {0pt} % No extra spacing
+  {} % No additional formatting
+
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}%
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}%
+
+\renewcommand{\thefootnote}{\textsuperscript{\Cross}}% Change footnote numbering to †
+
+% Add dots to table of contents
+\makeatletter
+\patchcmd\l@section{%
+  \nobreak\hfil\nobreak
+}{%
+  \nobreak
+  \leaders\hbox{%
+    $\m@th \mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$%
+  }%
+  \hfill
+  \nobreak
+}{}{\errmessage{\noexpand\l@section could not be patched}}
+\makeatother
+\setcounter{secnumdepth}{0}
 
 \begin{document}
 
@@ -27,10 +52,11 @@
 \pagebreak
 \tableofcontents
 \pagebreak
-\section*{Prayers at Waking}
+\includegraphics[width=1\textwidth]{assets/celtic-knot-banner.png}
+\section{Prayers at Waking}
 \input{sections/prayers-at-waking.tex}
 \pagebreak
-\section*{Small Compline}
+\section{Small Compline}
 \input{sections/small-compline.tex}
 \pagebreak
 

@@ -1,9 +1,12 @@
-% Formatting Commamnds
+% Common formatting commamnds
 \newcommand{\alt}[1]{\begin{color}{red}#1\end{color}}% Red text
 \newcommand{\altit}[1]{\alt{\textit{#1}}}% Red itallic text
-\newcommand{\prayer}[1]{\begin{center}{\alt{#1}}\end{center}\vspace{-1em}}% Prayer headings
+\newcommand{\prayer}[1]{\begin{center}{\alt{#1}}\end{center}\vspace{-0.5em}}% Prayer headings
+\newcommand{\instruction}[1]{\rest\textit{#1}\rest}% Italic text with vertical padding
+\newcommand{\rest}{\vspace{1em}}% Adds some vertical space to break text up
 
-\newcommand{\firstletter}[1]{\huge#1\normalsize}
+% Aditional commands
+\newcommand{\firstletter}[1]{\alt{\huge#1}\normalsize}
 
 \newcommand{\deletechar}{\futurelet\temp\deletecharhelper}
 \newcommand{\deletecharhelper}[1]{%
