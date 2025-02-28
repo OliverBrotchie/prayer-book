@@ -1,0 +1,25 @@
+% Formatting Commamnds
+\newcommand{\alt}[1]{\begin{color}{red}#1\end{color}}% Red text
+\newcommand{\altit}[1]{\alt{\textit{#1}}}% Red itallic text
+\newcommand{\prayer}[1]{\begin{center}{\alt{#1}}\end{center}\vspace{-1em}}% Prayer headings
+
+\newcommand{\firstletter}[1]{\huge#1\normalsize}
+
+\newcommand{\deletechar}{\futurelet\temp\deletecharhelper}
+\newcommand{\deletecharhelper}[1]{%
+  \ifx\temp\relax % If the next token is the end of the input (i.e., nothing), do nothing
+  \else
+    \ifx\temp\space % If the next token is a space, do nothing
+    \else
+      \ifx\temp\par % If the next token is a paragraph break, do nothing
+      \else
+        \ifx\temp\endgroup % If the next token is the end of a group, do nothing
+        \else
+          \expandafter\deletecharinner\temp
+        \fi
+      \fi
+    \fi
+  \fi
+}
+
+\newcommand{\deletecharinner}[1]{}

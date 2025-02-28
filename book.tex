@@ -1,0 +1,37 @@
+\documentclass[9pt]{extarticle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[paperwidth=105mm, paperheight=148mm, margin=10mm]{geometry} 
+\usepackage{ifthen}
+\usepackage{xifthen}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\title{Prayer Book}
+\author{The Holy Archdiocese of Thyateira and Great Britan.}
+
+\linespread{1.2}%
+\setlength{\parindent}{0pt}%
+
+%\titlespacing{\section}{0pt}{\parskip}{-\parskip}%
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}%
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}%
+
+\begin{document}
+
+% Load the shortcut commands
+\input{commands/formatting.tex}
+\input{commands/prayers.tex}
+
+\maketitle
+\pagebreak
+\tableofcontents
+\pagebreak
+\section*{Prayers at Waking}
+\input{sections/prayers-at-waking.tex}
+\pagebreak
+\section*{Small Compline}
+\input{sections/small-compline.tex}
+\pagebreak
+
+\end{document}
