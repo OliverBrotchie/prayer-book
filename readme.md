@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1><code>Optionals</code></h1>
+  <h1><code>Prayer Book</code></h1>
 
 <strong>
 This repository contains the LaTeX source code for the new edition of Holy Archdiocese of Thyateira and Great Britain's prayer book.</strong>
