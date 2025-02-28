@@ -14,7 +14,7 @@
 
 ## How to Compile 💻
 
-To compile the prayer book, follow these steps:
+To compile the prayer book:
 
 1. Install LaTeX.
 2. Clone this repository:
